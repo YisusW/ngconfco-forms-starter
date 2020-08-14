@@ -8,6 +8,8 @@ import { WorkshopEntry } from '../shared/model/model';
 })
 export class WorkshopAddComponent implements OnInit {
 
+  public urlPattern = /[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)?/; 
+
   public entry: WorkshopEntry = {};
 
   constructor() { }
