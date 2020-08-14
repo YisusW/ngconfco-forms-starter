@@ -6,10 +6,12 @@ import { WorkshopComponent } from './workshop.component';
 import { WorkshopListComponent } from './workshop-list/workshop-list.component';
 import { WorkshopAddComponent } from './workshop-add/workshop-add.component';
 import { SharedModule } from '../shared/shared.module';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [WorkshopComponent, WorkshopListComponent, WorkshopAddComponent],
   imports: [
+    FormsModule,
     CommonModule,
     WorkshopRoutingModule,
     SharedModule
